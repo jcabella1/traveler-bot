@@ -5,7 +5,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
 client.commands = new Discord.Collection();
 
-const prefix = "+";
+const prefix = "!";
 
 // Load the command files on startup
 const commandFiles = fs.readdirSync('./commands');
